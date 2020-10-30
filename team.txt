@@ -1,4 +1,4 @@
-CPS 530 Term Project - test
+CPS 530 Term Project
 
 Manveer Gill
 Fars Bein
