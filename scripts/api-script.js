@@ -14,10 +14,10 @@ const loopData = (data) => {
     console.log(data)
     html=""
     for (i = 0; i < data.length; i++) {
-        html+='<tr><th scope="col">'+ isThereValue(data,i,"country")+'</th>'+
-        '<th scope="col">'+ isThereValue(data,i,"recovered") +'</th>'+
-        '<th scope="col">'+ isThereValue(data,i,"confirmed") +'</th>'+
-        '<th scope="col">'+ isThereValue(data,i,"deaths") +'</th><tr>'
+        html+='<tr><td scope="col">'+ isThereValue(data,i,"country")+'</td>'+
+        '<td scope="col">'+ isThereValue(data,i,"recovered") +'</td>'+
+        '<td scope="col">'+ isThereValue(data,i,"confirmed") +'</td>'+
+        '<td scope="col">'+ isThereValue(data,i,"deaths") +'</td><tr>'
     }
     const tableBody = document.querySelector('.body');
     tableBody.innerHTML = html
@@ -32,3 +32,4 @@ const loopData = (data) => {
 //     <th scope="col">Deaths</th>
 // </tr>
 // `
+

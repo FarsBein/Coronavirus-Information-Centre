@@ -17,7 +17,18 @@
     <script src="https://kit.fontawesome.com/06e4885c0f.js" crossorigin="anonymous"></script>
 
     <!-- My Style css file -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="testing.css">
+
+    <style>
+
+        /* map needs width and height to appear */
+        #map{
+            width: 900px;
+            max-width: 100%;
+            height: 500px;
+        }
+        
+    </style>
 
     <title>Testing</title>
 </head>
@@ -26,7 +37,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="../../index.html">Covid-19 Information Center</a>
+            <a class="navbar-brand js-scroll-trigger" href="../../index.html" style="box-shadow: none;">Covid-19 Information Center</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -69,8 +80,25 @@
             <p class="lead">Find Available Testing Location Near you</p>
         </div>
 
-        <div>
-            
+        <div class="center">
+            <div id="map"></div>
+
+            <script>
+            function initMap() {
+
+                // pick center coordinates for your map
+                var myMapCenter = {lat: 51.2538, lng: 85.3232};
+
+                // create map and say which HTML element it should appear in
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: myMapCenter,
+                    zoom: 8
+                });
+            }
+            </script>
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJs3hVtDyyqerA05qTReE7Ge-B8K06xYk&callback=initMap">
+            </script>
         </div>
 </body>
 </html>
