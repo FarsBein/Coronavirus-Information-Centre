@@ -17,7 +17,7 @@
     <script src="https://kit.fontawesome.com/06e4885c0f.js" crossorigin="anonymous"></script>
 
     <!-- My Style css file -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="news.css">
 
     <title>News</title>
 </head>
@@ -26,7 +26,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="../../index.html">Covid-19 Information Center</a>
+            <a class="navbar-brand js-scroll-trigger" href="../../index.html" style="box-shadow: none;">Covid-19 Information Center</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -65,12 +65,31 @@
         </nav>
     
         <div class="container-fluid bg-light p-5 text-center my-5">
+            <img src="../../images/news.svg" alt="news" height="64" style="margin-bottom: 10px;">
             <h1>Covid news</h1>
-            <p class="lead">News related to covid</p>
+            <p class="lead">Find the most recent news related to covid</p>
         </div>
-
-        <div class="body" style="display: flex; flex-direction: column; justify-content:center; align-items:center;">
+        
+        <div class="body" style="display: flex; flex-direction: column; justify-content:center; align-items:center; ">
+            <div class="card bg-light mb-3" style="max-width: 26rem;">
+                <div class="card-body">
+                  <h5 class="card-title">data[news]["source"]</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Updated: data[news]["pubDate"]</small>
+                </div>
+            </div>
             <script src="../../scripts/news-api.js"></script>
         </div>
     </body>
 </html>
+
+
+<!-- <div class="card bg-light mb-3" style="max-width: 41rem;">
+    <div class="card-body" style="background: black; color: white; font-weight: bold; border-radius: 10px;">
+        data[news]["html"]
+        <p class="card-text" style="font-size: 12px; margin-top: 10px;">Source: data[news]["source"]</p>
+        <p class="card-text" style="font-size: 12px; margin-top: 10px;">Updated: data[news]["pubDate"]</p>
+    </div>
+</div> -->

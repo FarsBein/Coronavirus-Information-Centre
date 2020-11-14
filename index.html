@@ -25,7 +25,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="">Covid-19 Information Center</a>
+        <a class="navbar-brand js-scroll-trigger" href="" style="box-shadow: none;">Covid-19 Information Center</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -63,16 +63,17 @@
     </div>
     </nav>
 
-    <div class="container-fluid bg-light p-5 text-center my-5">
+    <div class="container-fluid bg-light p-5 text-center my-5" style="width: 100%;">
+        <img src="images/data.svg" alt="Statistics" height="64" style="margin-bottom: 10px;">
         <h1>Country Statistics</h1>
         <p class="lead">Includes all countries/territories with reported confirmed cases.</p>
     </div>
 
     <!-- table of data -->
-    <div class="container-fluid">
-        <table class="table">
-        <thead>
-            <tr class="thead-dark">
+    <div class="container-md" >
+        <table class="table table-bordered" >
+        <thead style="position: sticky; top: 40px;">
+            <tr class="thead-dark" style="position: sticky; top: 40px;">
                 <th scope="col">Countries</th>
                 <th scope="col">Recovered</th>
                 <th scope="col">Confirmed</th>
@@ -80,7 +81,7 @@
             </tr>
         </thead>
         <tbody class="body">
-            <script src="api-script.js"></script>
+            <script src="scripts/api-script.js"></script>
         </tbody>
         </table>
     </div>
