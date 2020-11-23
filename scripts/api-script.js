@@ -23,13 +23,4 @@ const loopData = (data) => {
     tableBody.innerHTML = html
 }
 
-// document.body.innerHTML = 
-// `
-// <tr>
-//     <th scope="col">Countries</th>
-//     <th scope="col">Recovered</th>
-//     <th scope="col">Confirmed</th>
-//     <th scope="col">Deaths</th>
-// </tr>
-// `
 
