@@ -36,7 +36,7 @@ a:hover
 }
 .timeline ul li {
   padding: 20px;
-  background-color: #820e0e;
+  background-color: #000000;
   color: white;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -59,7 +59,7 @@ a:hover
     transform: translateX(-50%);
     width: 5px;
     height: 100%;
-    background-color: #820e0e;
+    background-color: #000000;
 }
 .timeline ul li {
     width: 60%;
@@ -70,7 +70,8 @@ a:hover
     float: left;
     clear: right;
     transform: translateX(-30px);
-    background-color: #072586;
+    background-color: #c0c0c2;
+    color: black;
 }
 .timeline ul li:nth-child(even) {
     float: right;
