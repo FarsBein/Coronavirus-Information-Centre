@@ -63,22 +63,36 @@
     
         <div class="container-fluid bg-light p-5 text-center my-5">
             <img src="../../images/resources.svg" alt="Statistics" height="64" style="margin-bottom: 10px;">
-            <h1>Resources</h1>
-            <p class="lead">The source of our data and the tools we used</p>
+            <h1>Feedback</h1>
+            <p class="lead">Thank you for taking the time!</p>
         </div>
 
-        <div style="text-align: center;">
-            <p>
-                The api that was used for this project is from <a href="https://covidnow.docs.apiary.io/" style="font-weight: bold;">Covid Now</a>
-            </p>
-            <br>
-            <p>
-                The website is hosted on Ryerson University Server (SCS) <a href="https://www.ryerson.ca/ccs/services/webcontentmgmt/" style="font-weight: bold;">Hosting at Ryerson</a> 
-            </p>
-            <br>
-            <p>
-                The used free icons we have used are from <a href="https://www.iconfinder.com/p/coronavirus-awareness-icons" style="font-weight: bold;">Icon Finder</a> 
-            </p>
+        <div class="container-md" style="display: flex; justify-content: center; align-items: center;">
+            <div class="card" style="max-width: 40rem; padding:10px;">
+                <form action="sftp://3661999@f27-preview.125mb.com:221/insert.php" method="post">
+                    <div class="form-group">
+                        <label for="score" style="font-size: 15px; margin-bottom: 20px">Based on your experience using Coronavirus Information Center, how likely are you to recommend us to a colleague, a friend or a family member?</label>
+                        <select class="form-control" id="score">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comment"  style="font-size: 15px; margin-bottom: 20px">Would you like to add a comment?</label>
+                        <textarea class="form-control" id="comment" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
         </div>
 
     </body>
