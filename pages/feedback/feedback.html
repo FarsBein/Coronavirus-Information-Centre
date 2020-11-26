@@ -72,31 +72,44 @@
 
         <div class="container-md" style="display: flex; justify-content: center; align-items: center;">
             <div class="card" style="max-width: 40rem; padding:10px;">
-                <form action="sftp://3661999@f27-preview.125mb.com:221/insert.php" method="post">
+                <form action="https://cps530-labs.000webhostapp.com/index.php" method="get">
                     <div class="form-group">
                         <label for="score" style="font-size: 15px; margin-bottom: 20px">Based on your experience using Coronavirus Information Center, how likely are you to recommend us to a colleague, a friend or a family member?</label>
-                        <select class="form-control" id="score">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
+                        <select class="form-control" id="score" name="score">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
                         </select>
                     </div>
 
                     <div class="form-group">
                         <label for="comment"  style="font-size: 15px; margin-bottom: 20px">Would you like to add a comment?</label>
-                        <textarea class="form-control" id="comment" rows="3"></textarea>
+                        <textarea class="form-control" name="comment" id="comment" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
+
+        <!-- <form action="test.php" method="get">
+            <label for="score">score:</label><br>
+            <select id="score" name="score">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select><br>
+              <label for="comment">comment:</label><br>
+              <textarea name="comment" rows="10" cols="30"></textarea>
+            <input type="submit" value="Submit">
+        </form> -->
 
     </body>
 </html>
