@@ -1,10 +1,7 @@
-<!-- code that was used for the feed back page hosted on 000webhost -->
+<!-- code that was used for the feedback page hosted on 000webhost -->
 
 <?php
-/* Attempt MySQL server connection. Assuming you are running MySQL
-server with default setting (user 'root' with no password) */
-
-$link = new mysqli("localhost","id15297802_lab05q1","Wnej&2MYV~t]#(/}","id15297802_lab05");
+$link = new mysqli("localhost","id15585758_covid","C[Z\mnNEy3+F)cV&","id15585758_data");
  
 // Check connection
 if($link === false){
@@ -26,4 +23,7 @@ if(mysqli_query($link, $sql)){
  
 // Close connection
 mysqli_close($link);
+
 ?>
+
+<meta http-equiv="refresh" content="3;url=https://www.cs.ryerson.ca/~fbein/project/pages/feedback/feedbackDone.html">

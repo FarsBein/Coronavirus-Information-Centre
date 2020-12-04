@@ -71,18 +71,10 @@
         </div>
 
         <div style="text-align: center;">
-            <p>
-                The api that was used for this project is from <a href="https://covidnow.docs.apiary.io/" style="font-weight: bold;">Covid Now</a>
-            </p>
-            <br>
-            <p>
-                The website is hosted on Ryerson University Server (SCS) <a href="https://www.ryerson.ca/ccs/services/webcontentmgmt/" style="font-weight: bold;">Hosting at Ryerson</a> 
-            </p>
-            <br>
-            <p>
-                The used free icons we have used are from <a href="https://www.iconfinder.com/p/coronavirus-awareness-icons" style="font-weight: bold;">Icon Finder</a> 
-            </p>
+            <!-- code that was used for the faq page hosted on 000webhost -->
+            <?php
+                include "retrieve.php";
+            ?>
         </div>
-
     </body>
 </html>
