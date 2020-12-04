@@ -10,3 +10,17 @@ a:hover
     cursor:pointer;  
     box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 5px 10px rgba(166,173,201,.2);
 }
+
+.body {
+    margin: 0 15% 0 10%;
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+    margin: 80px; 
+    grid-gap: 20px;
+}
+
+@media screen and (max-width: 460px) {
+    .body {
+        margin-left: 7px;
+    }
+}

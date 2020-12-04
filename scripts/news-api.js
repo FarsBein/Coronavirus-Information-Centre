@@ -10,7 +10,7 @@ const loopData = (data) => {
             console.log(data[news]);
             html+=
             '<a href="'+data[news]["link"]+'">'+
-            '<div class="card bg-light mb-3" style="max-width: 26rem;">'+
+            '<div class="card bg-light mb-3" style="max-width: 100%;">'+
             '<div class="card-body" >'+
               '<h5 class="card-title">'+ data[news]["title"] +'</h5>'+
             '</div>'+
