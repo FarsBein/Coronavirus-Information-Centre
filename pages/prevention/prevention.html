@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<html class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script>document.documentElement.className = document.documentElement.className.replace('no-js','js');</script>
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     
@@ -24,8 +21,7 @@
 
     <title>Prevention</title>
 </head>
-<div>
-     
+<body class="body">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
         <div class="container">
@@ -84,30 +80,36 @@
                 </p>
             </div>
         </div>
-        <div style="display: flex; justify-content: center; align-items: center;">
-                <div class="gallery">
-                    <img src="../../images/mask.png" alt="Cinque Terre" width="600" height="400">
-                    <div class="desc">Wear a mask to prevent from germs entering through mouth/nose</div>
+
+        <div class="img-cards">
+            <div class="card" style="width: 18rem; margin-top:10px">
+                <img class="card-img-top" src="../../images/mask.png" alt="Cinque Terre" height="286">
+                <div class="card-body">
+                    <p class="card-text">Wear a mask to prevent from germs entering through mouth/nose</p>
                 </div>
-            
-                <div class="gallery">
-                    <img src="../../images/wash.png" alt="Forest" width="600" height="400">
-                    <div class="desc">Wash Your Hands Frequently and for 20 seconds</div>
+            </div>
+
+            <div class="card" style="width: 18rem; margin-top:10px">
+                <img class="card-img-top" src="../../images/wash.png" alt="Forest" >
+                <div class="card-body">
+                    <p class="card-text">Wash hands for at least 20 seconds (including your palms and between fingers).</p>
                 </div>
-            
-                <div class="gallery">
-                    <img src="../../images/6FT.png" alt="Northern Lights" width="600" height="400">
-                    <div class="desc">Remain 6 feet apart from everyone around you</div>
+            </div>
+
+            <div class="card" style="width: 18rem; margin-top:10px">
+                <img class="card-img-top" src="../../images/6FT.png" alt="Northern Lights" >
+                <div class="card-body">
+                    <p class="card-text">it is important to stay at least 6 feet apart from everyone around you</p>
                 </div>
-            
-                <div class="gallery">
-                    <img src="../../images/clean.png" alt="Mountains" width="600" height="400">
-                    <div class="desc">If forced to go to place or work, clean any surface you 
-                        come into close contact with.</div>
+            </div>
+
+            <div class="card" style="width: 18rem; margin-top:10px">
+                <img class="card-img-top" src="../../images/clean.png" alt="Mountains" >
+                <div class="card-body">
+                    <p class="card-text">If forced to go to place or work, clean any surface you come into close contact with.</p>
                 </div>
             </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script>$('body').fadeIn(500); // fadein time in ms</script>
+    <script>$('body').fadeIn(5000); // fadein time in ms</script>
 </body>
 </html>
