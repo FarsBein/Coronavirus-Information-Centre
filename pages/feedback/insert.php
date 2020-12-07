@@ -16,7 +16,7 @@ $comment = mysqli_real_escape_string($link, $_REQUEST['comment']);
 $sql = "INSERT INTO feedback (score, comment) VALUES ('$score', '$comment')";
 
 if(mysqli_query($link, $sql)){
-    echo "Records added successfully.";
+    echo "Records added successfully. Please wait for 5 seconds as we process your feedback.";
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
@@ -26,4 +26,4 @@ mysqli_close($link);
 
 ?>
 
-<meta http-equiv="refresh" content="3;url=https://www.cs.ryerson.ca/~fbein/project/pages/feedback/feedbackDone.html">
+<meta http-equiv="refresh" content="3;url=https://covid-info-center.000webhostapp.com/pages/feedback/feedbackDone.html">
