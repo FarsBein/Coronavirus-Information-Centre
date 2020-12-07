@@ -12,16 +12,17 @@ a:hover
 }
 
 .body {
-    margin: 0 15% 0 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-    margin: 80px; 
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+    margin-left: 15%; 
+    margin-right: 15%;
 }
 
 @media screen and (max-width: 460px) {
     .body {
-        margin-right: 10px;
+        margin-left: 0; 
     }
 }
 
