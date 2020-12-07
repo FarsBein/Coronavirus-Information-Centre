@@ -23,3 +23,6 @@ a:hover
   margin-left: 15%; 
 }
 
+.js body { 
+    display: none; 
+}
