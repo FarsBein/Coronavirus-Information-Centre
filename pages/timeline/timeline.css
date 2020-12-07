@@ -89,3 +89,8 @@ a:hover
 .js body { 
   display: none; 
 }
+
+.content-container {
+  margin-left: 15%; 
+  margin-right: 15%; 
+}
