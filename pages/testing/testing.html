@@ -18,18 +18,6 @@
 
     <!-- My Style css file -->
     <link rel="stylesheet" href="testing.css">
-
-    <style>
-
-        /* map needs width and height to appear */
-        #map{
-            width: 900px;
-            max-width: 100%;
-            height: 500px;
-        }
-        
-    </style>
-
     <title>Testing</title>
 </head>
 <body>
@@ -74,31 +62,39 @@
             </div>
         </div>
         </nav>
-    
+
         <div class="container-fluid bg-light p-5 text-center my-5">
             <h1>Testing Locations</h1>
-            <p class="lead">Find Available Testing Location Near you</p>
+            <p class="lead">Find Available Testing Location in Ontario</p>
+        <div class="gallery">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.3980261349448!2d-79.60102069999999!3d43.723057700000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3a4c47501695%3A0xa03984db7b4ebe84!2s2%20Janda%20Ct%2C%20Etobicoke%2C%20ON%20M9W%200A4%2C%20Canada!5e0!3m2!1sen!2sjo!4v1607249916496!5m2!1sen!2sjo" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <h6 style="text-align: center;">William Osler Health System - Etobicoke Drive-thru</h6>
+          <div class="desc"></div>
         </div>
-
-        <div class="center">
-            <div id="map"></div>
-
-            <script>
-            function initMap() {
-
-                // pick center coordinates for your map
-                var myMapCenter = {lat: 51.2538, lng: 85.3232};
-
-                // create map and say which HTML element it should appear in
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    center: myMapCenter,
-                    zoom: 8
-                });
-            }
-            </script>
-            <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJs3hVtDyyqerA05qTReE7Ge-B8K06xYk&callback=initMap">
-            </script>
+        <div class="gallery">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.871786112263!2d-79.52593209999999!3d43.754759199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b30308f935813%3A0x113078b79ea72ef4!2s2111%20Finch%20Ave%20W%2C%20North%20York%2C%20ON%20M3N%201N1%2C%20Canada!5e0!3m2!1sen!2sjo!4v1607250032737!5m2!1sen!2sjo" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <h6 style="text-align: center;">Humber River Hospital Assessment Centre - Finch</h6>
+          <div class="desc"></div>
+        </div>
+        <div class="gallery">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.994809616685!2d-79.3248582!3d43.68987130000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cc67c1def687%3A0xb23cda866b84fb38!2s825%20Coxwell%20Ave%2C%20East%20York%2C%20ON%20M4C%203E7%2C%20Canada!5e0!3m2!1sen!2sjo!4v1607250081030!5m2!1sen!2sjo" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <h6 style="text-align: center;">Michael Garron Hospital - Outpatient Clinic</h6>
+          <div class="desc"></div>
+        </div>
+        <div class="gallery">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.549331182145!2d-79.3900848!3d43.65754390000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34c85d3dc4ab%3A0x7c41dc5ba1d1ccfc!2s600%20University%20Ave%2C%20Toronto%2C%20ON%20M5G%201X5%2C%20Canada!5e0!3m2!1sen!2sjo!4v1607250379673!5m2!1sen!2sjo" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <h6 style="text-align: center;">Mount Sinai Hospital</h6>
+          <div class="desc"></div>
+        </div>
+        <div class="gallery">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.0195263859005!2d-79.4481361!3d43.7724535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2deccbb70e39%3A0xa4732bf8ad2c9984!2s555%20Finch%20Ave%20W%2C%20North%20York%2C%20ON%20M2R%202C2%2C%20Canada!5e0!3m2!1sen!2sjo!4v1607250476395!5m2!1sen!2sjo" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <h6 style="text-align: center;">North York General Hospital - Branson</h6>
+          <div class="desc"></div>
+        </div>
+        <div class="gallery">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.607848081376!2d-79.30905659999999!3d43.80174969999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3c1c886278f%3A0x75d23c7a82b150c9!2s3030%20Birchmount%20Rd%2C%20Scarborough%2C%20ON%20M1W%203W3%2C%20Canada!5e0!3m2!1sen!2sjo!4v1607250457469!5m2!1sen!2sjo" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>            
+            <h6 style="text-align: center;">Scarborough Health Network - Birchmount</h6>
+          <div class="desc"></div>
         </div>
 </body>
 </html>
