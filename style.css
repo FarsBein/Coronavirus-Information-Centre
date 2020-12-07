@@ -20,3 +20,7 @@ a:hover
         font-size: 85%;
     }
 }
+
+.js body { 
+    display: none; 
+}

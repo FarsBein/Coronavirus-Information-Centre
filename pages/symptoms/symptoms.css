@@ -43,3 +43,6 @@ div.gallery {
     padding: 15px;
     text-align: center;
   }
+  .js body { 
+    display: none; 
+}
