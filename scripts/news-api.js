@@ -1,13 +1,15 @@
+//A javascript script that helps us populate our new page with the latest news regarding covid.
 fetch('https://api.covidnow.com/v1/news/usa')
     .then(res => res.json())
     .then(data => loopData(data));
 
-
+//A looping function that will loop through the data and help us build the HTML cards that are displayed on the news page.
 const loopData = (data) => {
     html="";
     for (const news in data) {
         if (data[news]["title"]){
             console.log(data[news]);
+            //Build the HTML required to display the cards with news.
             html+=
             '<a href="'+data[news]["link"]+'">'+
             '<div class="card bg-light mb-3" style="max-width: 100%; margin: 10px">'+

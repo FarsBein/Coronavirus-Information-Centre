@@ -1,6 +1,7 @@
+<!-- This is our feedback page. It contains a form for users to enter feedback to submit to us regarding our website. -->
 <!DOCTYPE html>
 <html lang="en">
-<html class="no-js">
+<html class="no-js"> <!-- Require a specific javascript class which streamlines the process of writing javascript code for this page. -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,11 +29,14 @@
     
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="../../index.html" style="box-shadow: none;">Coronavirus Information Center</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="container">
+                <!-- Redirect users to the homepage when clicking our header -->
+                <a class="navbar-brand js-scroll-trigger" href="../../index.html" style="box-shadow: none;">Coronavirus Information Center</a>
+                <!-- Responsive navbar that collapses on different devices -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <!-- Hyperlinks in the navbar that redirect you to other parts of our website -->
             <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li>
@@ -66,15 +70,18 @@
             </div>
         </div>
         </nav>
-    
+        
+        <!-- A specific page header that includes an icon and some header/info text to inform the user what the page is about. -->
         <div class="container-fluid bg-light p-5 text-center my-5">
             <img src="../../images/resources.svg" alt="Statistics" height="64" style="margin-bottom: 10px;">
             <h1>Feedback</h1>
             <p class="lead">Thank you for taking the time!</p>
         </div>
 
+        <!-- Here is the actual form for feedback. It is contained in a bootstrap container and is connected to a php backend so we can access the feedback submitted to us. -->
         <div class="container-md" style="display: flex; justify-content: center; align-items: center;">
             <div class="card" style="max-width: 40rem; padding:10px;">
+                <!-- Connect to our php backend and send the feedback to us -->
                 <form action="https://covid-info-center.000webhostapp.com/pages/feedback/insert.php" method="get">
                     <div class="form-group">
                         <label for="score" style="font-size: 15px; margin-bottom: 20px">Based on your experience using Coronavirus Information Center, how likely are you to recommend us to a colleague, a friend or a family member?</label>
@@ -92,14 +99,17 @@
                         </select>
                     </div>
 
+                    <!-- An area for users to submit text based feedback -->
                     <div class="form-group">
                         <label for="comment"  style="font-size: 15px; margin-bottom: 20px">Would you like to add a comment?</label>
                         <textarea class="form-control" name="comment" id="comment" rows="3"></textarea>
                     </div>
+                    <!-- Submit button -->
                     <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
+        <!-- JS/JQuery code for a fade in transition into our page -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script>$('body').fadeIn(500); // fadein time in ms</script>
     </body>
